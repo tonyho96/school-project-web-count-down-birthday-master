@@ -1,0 +1,77 @@
+body{
+	background-color: #091e33;
+}
+
+.red-border{
+	border: 1px solid red !important;
+}
+
+#modalBlock{
+	display: block;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #3aab6c;
+}
+
+#modalBlock .md-container{
+	display: block;
+	height: auto;
+	width: 500px;
+	background-color: #eee;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+}
+
+#modalBlock .md-container .md-header{
+	padding-top: 20px;
+	text-align: center;
+	color: #ea2f2f;
+}
+
+#modalBlock .md-container .md-content input,
+#modalBlock .md-container .md-content select{
+	margin-bottom: 20px;
+}
+
+#modalBlock .md-container .md-content button{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.countdown {
+	background-color: #fff;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.countdown .capt{
+	font-size: 22px;
+	margin-top: 10px;
+	color: #aaa;
+	text-align: center;
+}
+
+.countdown .time-block{
+	display: block;
+	height: 200px;
+	text-align: center;
+	background-color: #3abf49;
+}
+
+.countdown .time-block span{
+	font-size: 80px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 10px;
+	display: block;
+	padding-top: 50px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="description" content="">
+    <meta name="author" content=""> 
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href=".css/bootstrap-theme.min.css">
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <title>15520922 _ Ho Minh Tri</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top hidden" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h3 id="Welcome">A Warm Welcome!</h3>
+            <h3 id="Announcement"></h3>
+            <div class="countdown">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="time-block">
+                            <span id="dayRelease">00</span>
+                        </div>
+                        <div class="capt">Day</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="time-block">
+                            <span id="hourRelease">00</span>
+                        </div>
+                        <div class="capt">Hour</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="time-block">
+                            <span id="minRelease">00</span>
+                        </div>
+                        <div class="capt">Minute</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="time-block">
+                            <span id="secondsRelease">00</span>
+                        </div>
+                        <div class="capt">Second</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+
+    </div>
+    <!-- /.container -->
+
+    <div id="modalBlock" >
+        <div class="md-container">
+            <div class="md-header">
+                <h3>Please fullfill your information: "></h3>
+                <span id="errorLog" style="display: none; color: red;"></span>
+            </div>
+            <div class="md-content">
+                <input type="text" placeholder="First name" id="FirstName" class="form-control">
+                <input type="text" placeholder="Last name" id="LastName" class="form-control">
+                <select class="form-control" id="Gender">
+                    <option value="0">Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+                <select class="form-control" id="DayOfBirth">
+                    <option value="0">Day of Birth</option>
+                </select>
+                <select class="form-control" id="MonthOfBirth">
+                    <option value="0">Month of Birth</option>
+                </select>
+                <select class="form-control" id="YearOfBirth">
+                    <option value="0">Year of Birth</option>
+                </select>
+                <button class="btn btn-success" id="BtnSubmit" onclick="submit()">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script>
+        window.onload = fillDateOfBirth();
+    </script>
+
+</body>
+
+</html>
